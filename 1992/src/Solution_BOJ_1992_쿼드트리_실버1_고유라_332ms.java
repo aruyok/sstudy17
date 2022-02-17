@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 /* 1. 기본적으로 1/4 > 전체 0이나 1 아니면 또 1/4 ... 
- * 2. 1/4할 때마다 괄호 표시 */
+ * 2. 1/4할 때마다 괄호 표시*/
 public class Solution_BOJ_1992_쿼드트리_실버1_고유라_332ms {
 	static int[][] arr;
 	static int N;
