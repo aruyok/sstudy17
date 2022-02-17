@@ -32,6 +32,7 @@ public class Main_백준_3190_뱀_골드5_88ms {
 		// 뱀, [r, c] 배열을 통해 관리
 		ArrayDeque<Integer> snakeR = new ArrayDeque<Integer>();
 		ArrayDeque<Integer> snakeC = new ArrayDeque<Integer>();
+		
 		// 뱀의 초기 상태
 		snakeR.addFirst(1);
 		snakeC.addFirst(1);
@@ -65,7 +66,7 @@ public class Main_백준_3190_뱀_골드5_88ms {
 			// 시간++
 			playTime++;
 			
-			// 몸 길이를 늘려, 머리를 다음칸에 위치시킨다. 
+			// 몸 길이를 늘려, 머리를 다음칸에 위치시킨다. 머리 - 꼬리
 			int nextR = snakeR.peekFirst() + dr[headToward];
 			int nextC = snakeC.peekFirst() + dc[headToward];
 			snakeR.addFirst(nextR);
