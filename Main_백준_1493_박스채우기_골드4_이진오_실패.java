@@ -48,7 +48,7 @@ public class Main_백준_1493_박스채우기_골드4_이진오_실패 {
 		int size = cubeSizes[index];
 		
 		// 가능한 분할 수(l, w, h 기준)
-		int dl = l / size;
+		int dl = l / size; // 10^6, size = 1
 		int dw = w / size;
 		int dh = h / size;
 		
