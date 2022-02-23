@@ -47,18 +47,18 @@ public class Main_백준_1922_네트워크연결_골드4_이진오_612ms_KRUSKAL
 		}
 		Arrays.sort(edgeList, (e1, e2) -> e1[2] - e2[2]);
 		
-		int sum = 0;
-		int treeSize = 1;
+		int sum = 0;     // 현재까지 가중치의 합
+		int edgeCnt = 0; // 현재까지 연결된 간선의 개수
 		for (int i = 0; i < M; i++) {
 			int from   = edgeList[i][0];
 			int to     = edgeList[i][1];
 			int weight = edgeList[i][2];
 			
-			if (from == to) continue;
+			if (from == to) continue; // from과 to가 동일할 경우 건너뜀
 			
-			if (union(from, to)) {
+			if (union(from, to)) {    // 서로소 집합 union이 성공했다면, 간선을 연결한다
 				sum += weight;
-				if(++treeSize == N) break;
+				if(++edgeCnt == N-1) break;
 			}
 		}
 		
