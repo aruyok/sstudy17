@@ -57,10 +57,10 @@ public class Solution_BOJ_1941_소문난칠공주_고유라_304ms {
 			for(int i = 0 ; i < 7 ; i++) {
 				if(p==i || check[i])
 					continue;
-				if(comb[p] % 5 == 0) // 가장 왼쪽 벽일때
+				if(comb[p] % 5 == 0) // 제일 왼쪽 벽
 					if(comb[p] - 1 == comb[i])
 						continue;
-				if(comb[p] % 5 == 4) //가장 오른쪽 벽일때
+				if(comb[p] % 5 == 4) // 제일 오른쪽 벽
 					if(comb[p] + 1 == comb[i])
 						continue;
 				if(comb[p] - 1 == comb[i] || comb[p] + 1 == comb[i] || comb[p]+5 == comb[i] || comb[p] - 5 == comb[i]) {
