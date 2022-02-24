@@ -6,7 +6,6 @@ import java.util.StringTokenizer;
 /* 1. k-5개 새로 읽기 (a n t i c)
  * 2. k=26이면 알파벳 전체
  * 3. 알파벳 전체 확인하는 boolean 배열 */
-
 public class Solution_BOJ_1062_가르침_고유라_320ms {
 	static int N;
 	static int K;
